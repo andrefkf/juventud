@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 45px;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to top, #df9102 0%, #a80c0c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav.menu {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.contenidomenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    position: relative;
+}
+
+.menutexto {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.menutexto:hover {
+    background-color: #555;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #140202;
+    padding: 0;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+    
+}
+
+.menudesplegable:hover .submenu {
+    display: block;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.subitem {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.subitem:hover {
+    background-color: #9e9e9e;
+    color: #000000;
+}
+
+.btnmenu {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btnmenu:hover {
+    background-color: #0056b3;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buscador {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.tabla {
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-weight: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 70px; /* Agrega margen a la izquierda */
+    margin-right: 70px;
+    text-align: center;
+}
+
+.tabla th, .tabla td {
+    border: 2px solid #000; /* Borde fino alrededor de celdas */
+    padding: 12px; /* Relleno en las celdas */
+    text-align: center; /* Alinea el texto a la izquierda */
+}
+
+.tabla th {
+    background-color: #e6c71b; /* Fondo verde para los encabezados */
+    color: #000; 
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #ddd; /* Fondo gris claro en las filas pares */
+}
+
+.tabla tr:hover {
+    background-color: #ccc; /* Cambia el fondo cuando se pasa el ratón por encima */
+}
+
+.tabla td {
+    font-size: 20px; /* Tamaño del texto en las celdas */
+    color: #222; /* Color del texto en las celdas */
+}
+
+footer {
+    position: fixed; /* Fija el footer al fondo */
+    bottom: 0; /* Lo mantiene pegado al fondo */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    border-radius: 50px 0 0 0;
+}
+
+/* Contenedor de botones dentro del footer */
+.izquierda {
+    display: flex;
+    flex-direction: row; /* Alinea los botones horizontalmente */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    background-color: transparent;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    border-radius: 50px 10px 5px 20px;
+}
+
+.btnder {
+    background-color: #2a28a7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 200px; /* Botones ocupan todo el ancho disponible */
+    border-radius: 20px;
+    margin: 0 10px; 
+
+}
+
+.btnder:hover {
+    background-color: #0bbe0b;
+}
+
+.logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
